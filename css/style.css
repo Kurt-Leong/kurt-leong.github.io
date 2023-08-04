@@ -254,14 +254,14 @@ font: inherit;
 .title-medium{
   font-family:var(--font-primary);
   font-size:var(--title-medium);
-  font-weight:var(--weight-regular);
+  font-weight:var(--weight-medium);
   line-height:24px;
   letter-spacing: 0.15px;
 }
 .title-small{
   font-family:var(--font-primary);
   font-size:var(--title-small);
-  font-weight:var(--weight-regular);
+  font-weight:var(--weight-medium);
   line-height:20px;
   letter-spacing: 0.1px;
 
