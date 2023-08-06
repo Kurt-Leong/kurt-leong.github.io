@@ -335,10 +335,10 @@ font: inherit;
 }
 
 .state-layer{ 
- position:absolute;
-  inset:0;
-  background-color:var(--state-layer-bg);
-  transition:var(--motion-duration-short-1) var(--motion-easing-linear);
+ position: absolute;
+  inset: 0;
+  background-color: var(--state-layer-bg);
+  transition: var(--motion-duration-short-1) var(--motion-easing-linear);
   opacity:0;
 }
 :has(> state-layer):hover .state-layer{opacity:0.08;}
@@ -351,17 +351,24 @@ font: inherit;
   padding-inline:16px
 }
 .img-holder{
-  aspect-ratio: var(--width) /var (--height);
-  background-color:transparent;
-  overflow:hidden;
+  aspect-ratio: var(--width) / var(--height);
+  background-color: transparent;
+  overflow: hidden;
 }
  .img-cover {
-  width:100%;
-  height:100%;
-  object-fit:cover
+  width: 100%;
+  height: 100%;
+  object-fit: cover
  }
 
- .tab-content:not(.active) {display:none}
+ .tab-content:not(.active) { display: none; }
+
+ .section-title {
+  margin-block-end: 16px;
+ }
+
+
+
 
 /*-----------------------------------*\
   #COMPONENT
@@ -371,10 +378,10 @@ font: inherit;
  * BUTTON
  */
 .icon-btn {
-  width:40px;
-  height:40px;
-  display:grid;
-  place-items:center;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
 
 }
 
@@ -383,20 +390,20 @@ font: inherit;
  */
 .primary-tabs{
   background-color: var(--background);
-  margin-block-start:24px;
-  margin-inline:16px;
-  display:grid;
+  margin-block-start: 24px;
+  margin-inline: 16px;
+  display: grid;
   grid-template-columns: repeat(3,1fr);
   justify-content: center;
   border-block-end:1px solid var(--outline)
 }
 
 .tab-btn {
-  height:48px;
+  height: 48px;
   width: 100%;
   display: grid;
   place-content: center;
-  background-color:var(--surface);
+  background-color: var(--surface);
   color: var(--on-surface-variant); /*  why not working here */ 
   --state-layer-bg: var(--on-surface-variant)
 }
@@ -408,17 +415,17 @@ font: inherit;
 
 .tab-text{
   position: relative;
-  height:48px;
+  height: 48px;
   line-height: 48px;
 }
 
 .tab-text::after{
-  content:"";
-  position:absolute;
-  bottom:0;
-  left:100%;
-  height:3px;
-  border-radius:3px 3px 0 0;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  height: 3px;
+  border-radius: 3px 3px 0 0;
   background-color: var(--primary );
   opacity: 0;
 }
@@ -450,15 +457,15 @@ font: inherit;
 .card {
   background-color: var(--surface-container-low);
   border-radius: var(--radius-medium);
-  padding:16px;
+  padding: 16px;
   --state-layer-bg: var(--on-surface-variant);
 
 } 
 
 .card-banner {border-radius: var(--radius-medium)}
 .card-content {
-  display:grid;
-  gap:4px;
+  display: grid;
+  gap: 4px;
 }
 
 .card-subtitle {color: var(--on-surface-variant)}
@@ -476,16 +483,16 @@ font: inherit;
 \*-----------------------------------*/
 .topbar {
   background-color:var(--background);
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height :var(--top-bar-height);
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--top-bar-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-inline: 5px;
-  z-index:4
+  z-index: 4
 }
 
 [data-theme="dark"] .logo .light,
@@ -550,8 +557,8 @@ font: inherit;
   color: var(--on-surface);
 }
 .about-card .card-text{
-  margin-block:12px;
-  padding-block:12px;
+  margin-block: 12px;
+  padding-block: 12px;
   border-block: 1px solid var(--outline-variant);
 
 }
@@ -586,7 +593,42 @@ font: inherit;
 /*-----------------------------------*\
   #RESUME
 \*-----------------------------------*/
+.resume-tab .list{
+display:grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 24px;
+margin-block-end: 28px;
+}
+.resume-card{
+  display: grid;
+  gap: 4px;
 
+}
+
+.resume-card .card-subtitle{
+  color: var(--primary)
+}
+
+.resume-card .card-text {
+  color: var(--on-surface-variant)
+}
+
+.resume-bottom-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
+  gap: 12px
+}
+
+.resume-bottom-item {
+  background-color: var(--surface-container);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  border-radius: var(--radius-small);
+}
+
+.resume-bottom-item .icon{ height: 28px }
 
 
 
