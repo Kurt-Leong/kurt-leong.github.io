@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--
+  -meta tags
+-->
+  <title>Devfolio -Kurt Liang portfolio</title>
+  <meta name="title" content="Devfolio - Kurt Liang portfolio">
+  <meta name="description" content="This is a personal portfoilo code along with codewithsadee">
+<!--
+  -favicon
+-->
+<link rel="shortcut icon" href="./facicon.svg" type="image/svg+xml">
+<!--
+  - google font link
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Open+Sans:wght@400;500&display=swap"
+  rel="stylesheet">
+
+  <!--
+    - material icon link
+  -->
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<!--
+-#TOP BAR
+-->
+<header class="topbar">
+  <a href="/" class="logo">
+    <img src="./assets/images/Logo_dark.png" alt="Devfolio" width="145" height="32" class="dark">
+    <img src="./assets/images/Logo_light.png" alt="Devfolio" width="145" height="32" class="light">
+  </a>
+  <button class="icon-btn theme-btn" data-theme-btn>
+    <span class="material-symbols-outlined dark" aria-hidden="true"> dark_mode </span>
+    <span class="material-symbols-outlined light" aria-hidden="true"> light_mode </span>
+    <div class="state-layer"></div>
+  </button>
+
+</header>
+
+
+ <main>
+  <article>
+     <!--
+      - profile
+     -->
+     <section class="section profile">
+      <div class="container">
+        <figure class="profile-banner img-holder" style="--width: 240; --height: 240">
+        <img src="./assets/images/profile.png"  width="240" height="240" alt="Kurt Liang" class="img-cover">
+      </figure>
+      <div class="profile-content">
+        <span class="label-large section-subtitle"> </span>
+        <h1 class="display-small">Kurt Liang</h1>
+        <p class="body-large section-text">I've been working in the Education industry for almost a decade now, but I needed a new challenge in my life. So I decided to enroll in the Dev Academy and become a full-stack developer! I love to solve puzzles and take on challenges, and coding has given me a whole new set of problems to tackle.
+          I am also a CrossFit enthusiast and snowboard lover. And when I need to wind down, I like to play some sweet tunes on my piano or guitar.Thanks for checking out my portfolio, let's connect and make some cool stuff together!
+        </p>
+        <div class="btn-wrapper">
+          <a href="mailto:liangke1991@yahoo.com" class="chip">
+
+            <span class="material-symbols-outlined" aria-hidden="true"> mail </span>
+            <span class="label-large">liangke1991@yahoo.com</span>
+            <div class="state-layer"></div>
+          </a>
+          <a href="tel:+642108469847" class="chip">
+
+            <span class="material-symbols-outlined" aria-hidden="true"> call </span>
+
+            <span class="label-large">+642108469847</span>
+            <div class="state-layer"></div>
+          </a>
+        </div>
+      
+        </div>
+      </div>
+     </section>
+     <div class="article">
+      <div class="about-card">
+        <h2 class="cardtitle title-medium">About</h2>
+        <p class="body-medium card-text">
+          A passionate full-stack software engineer
+        </p>
+        <ul class="about-list">
+          <li class="list-item">
+              <span class="material-symbols-outlined" aria-hidden="true"> location_on </span>
+              <span class="label-medium">Auckland, New Zealand</span>
+          </li>
+          <li class="list-item">
+            <span class="material-symbols-outlined" aria-hidden="true"> work </span>
+            <span class="label-medium">Auckland, New Zealand</span>
+        </li>
+        <li class="list-item">
+          <span class="material-symbols-outlined" aria-hidden="true"> captive_portal </span>
+          <span class="label-medium">Auckland, New Zealand</span>
+      </li>
+          
+        </ul>
+  
+      </div>
+      <div>
+
+        <!--
+          - #PRIMARY TABS
+        -->
+        <div class="primary-tabs">
+          <button class="tab-btn active" data-tab-btn="project">
+            <span class="tab-text title-small">Projects</span>
+            <div class="state-layer"></div>
+          </button>
+          <button class="tab-btn" data-tab-btn="resume">
+            <span class="tab-text title-small">Resume</span>
+            <div class="state-layer"></div>
+          </button>
+          <button class="tab-btn" data-tab-btn="contact">
+            <span class="tab-text title-small">Contact</span>
+            <div class="state-layer"></div>
+          </button>
+        </div >
+
+        <!--
+          - #PROJECTS
+        -->
+        <section class="section tab-content" data-tab-content="project">
+          <div class="container">
+            <div class="project-list">
+              <div class="card">
+                <figure class="card-banner img-holder" style="--width:334; --height:180">
+                  <img src="./assets/images/project-1.png" alt="project1"  width='334' height='180'class="img-cover"> 
+                </figure>
+                <div class="card-content">
+                   <span class="label-large card-subtitles">Web APP</span>
+                   <h3 class="title-large card-title">Pixstock- stock media App</h3>
+                  </div>
+                  <a href="" class="state-layer"></a>
+
+              </div>
+              <div class="card">
+                <figure class="card-banner img-holder" style="--width:334; --height:180">
+                  <img src="./assets/images/project-2.png" alt="project1"  width='334' height='180'class="img-cover"> 
+                </figure>
+                <div class="card-content">
+                   <span class="label-large card-subtitles">Web APP</span>
+                   <h3 class="title-large card-title">Cook.io - Recipe App</h3>
+                  </div>
+                  <a href="" class="state-layer"></a>
+
+              </div>
+              <div class="card">
+                <figure class="card-banner img-holder" style="--width:334; --height:180">
+                  <img src="./assets/images/project-3.png" alt="project1"  width='334' height='180'class="img-cover"> 
+                </figure>
+                <div class="card-content">
+                   <span class="label-large card-subtitles">Web APP</span>
+                   <h3 class="title-large card-title">Cook.io - Recipe App</h3>
+                  </div>
+                  <a href="" class="state-layer"></a>
+
+              </div>
+              <div class="card">
+                <figure class="card-banner img-holder" style="--width:334; --height:180">
+                  <img src="./assets/images/project-4.png" alt="project1"  width='334' height='180'class="img-cover"> 
+                </figure>
+                <div class="card-content">
+                   <span class="label-large card-subtitles">Web APP</span>
+                   <h3 class="title-large card-title">Cook.io - Recipe App</h3>
+                  </div>
+                  <a href="" class="state-layer"></a>
+
+              </div>
+            </div>
+          </div>
+        </section>
+   <!--
+    - # RESUME
+   -->
+   <section class="section tab-content resume-tab" data-tab-content="resume">
+    <div class="container">
+      
+      <!--
+        # experience
+      -->
+      <h2 class="section-section title-small">Experience</h2>
+      <ul class="list">
+        <li class="resume-item">
+          <div class="resume-card">
+            <p class="body-large">
+              Software Engineer
+            </p>
+            <span class="label-medium card-subtitle">2018 present</span>
+            <span class="body-mediu card-text">
+Led the development of a customer management system, resulting in improved efficiency and streamlined processes.
+
+            </span>
+
+          </div>
+        </li>
+        <li class="resume-item">
+          <div class="resume-card">
+            <p class="body-large">
+              Software Engineer
+            </p>
+            <span class="label-medium card-subtitle">2018 present</span>
+            <span class="body-mediu card-text">
+Led the development of a customer management system, resulting in improved efficiency and streamlined processes.
+
+            </span>
+
+          </div>
+        </li>
+        <li class="resume-item">
+          <div class="resume-card">
+            <p class="body-large">
+              Software Engineer
+            </p>
+            <span class="label-medium card-subtitle">2018 present</span>
+            <span class="body-mediu card-text">
+Led the development of a customer management system, resulting in improved efficiency and streamlined processes.
+
+            </span>
+
+          </div>
+        </li>
+      </ul>
+
+      <!--
+        # education
+      -->
+      <h2 class="section-title title-small">Education</h2>
+      <ul class="list">
+        <li class="resume-item">
+          <div class="resume-card">
+            <p class="body-large">
+              Certification in Web Development with React.js (FreeCodeCamp Certification)
+                <span class="label-medium">2015 - 2016</span>.card-subtitle
+            </p>
+          </div>
+        </li>
+        <li class="resume-item">
+          <div class="resume-card">
+            <p class="body-large">
+              Certification in Web Development with React.js (FreeCodeCamp Certification)
+                <span class="label-medium">2015 - 2016</span>.card-subtitle
+            </p>
+          </div>
+        </li>
+        <li class="resume-item">
+          <div class="resume-card">
+            <p class="body-large">
+              Certification in Web Development with React.js (FreeCodeCamp Certification)
+                <span class="label-medium">2015 - 2016</span>.card-subtitle
+            </p>
+          </div>
+        </li>
+      </ul>
+
+        <!--
+        # skills
+      -->
+      <h2 class="section-title title-small">Skills and Techonologies</h2>
+      <ul class="resume-bottom-list">
+        <li class="resume-bottom-item">
+          <img src="./assets/images/html5.svg" width="28" height="28" loading="lazy" alt="HTML5" class="icon">
+          <span class="label-medium">HTML%</span>
+        </li>
+        <li class="resume-bottom-item">
+          <img src="./assets/images/css3.svg" width="28" height="28" loading="lazy" alt="CSS3" class="icon">
+          <span class="label-medium">CSS3</span>
+        </li>
+        <li class="resume-bottom-item">
+          <img src="./assets/images/javascript.svg" width="28" height="28" loading="lazy" alt="Javascript" class="icon">
+          <span class="label-medium">JavaScript</span>
+        </li>
+        <li class="resume-bottom-item">
+          <img src="./assets/images/react.js.svg" width="28" height="28" loading="lazy" alt="React" class="icon">
+          <span class="label-medium">React</span>
+        </li>
+        <li class="resume-bottom-item">
+          <img src="./assets/images/node.js.svg" width="28" height="28" loading="lazy" alt="Node.js" class="icon">
+          <span class="label-medium">Node.js</span>
+        </li>
+        <li class="resume-bottom-item">
+          <img src="./assets/images/github.svg" width="28" height="28" loading="lazy" alt="GitHub" class="icon">
+          <span class="label-medium">React</span>
+        </li>
+        <li class="resume-bottom-item">
+          <img src="./assets/images/mongoDB.svg" width="28" height="28" loading="lazy" alt="MongoDB" class="icon">
+          <span class="label-medium">MongoDB</span>
+          <li class="resume-bottom-item">
+            <img src="./assets/images/VS_code.svg" width="28" height="28" loading="lazy" alt="VS Code" class="icon">
+            <span class="label-medium">VS Code</span>
+          </li>
+        </li>
+      </ul>
+
+    </div>
+   </section>
+
+
+   <!--
+    - # Contact
+   -->
+
+   <section class="section tab-content contact-tab active" data-tab-content="contact">
+    <div class="container">
+      <div class="contact-info">
+        <h4 class="section-title title-small">Contact Info</h4>
+        <ul class="contact-info-list">
+          <li class="contact-info-item">
+            <div class="icon-box">
+              <span class="material-symbols-outlined" aria-hidden="true"> mail </span>
+            </div>
+            <div class="info-content">
+              <p class="label-small info-title">Mail Us</p>
+              <a href="mailto:liangke1991@yahoo.com" class="label-small info-text">liangke1991@yahoo.com </a>
+            </div>
+          </li>
+          <li class="contact-info-item">
+            <div class="icon-box">
+              <span class="material-symbols-outlined" aria-hidden="true"> call </span>
+            </div>
+            <div class="info-content">
+              <p class="label-small info-title">Contact Us</p>
+              <a href="tel:+642108469847" class="label-small info-text">+642108469847</a>
+            </div>
+          </li>
+          <li class="contact-info-item">
+            <div class="icon-box">
+              <span class="material-symbols-outlined" aria-hidden="true"> location_on </span>
+            </div>
+            <div class="info-content">
+              <p class="label-small info-title">Address</p>
+              <a href="#" class="label-small info-text">Remuera, Auckland, New Zealand 1050</a>
+            </div>
+          </li>
+        </ul>
+        <h4 class="title-small">Social Info</h4>
+        <div class="social-list">
+          <a href="#" class="social-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_66_1649)">
+              <path d="M0.184072 10.462C-0.594929 15.368 1.58507 21.285 8.30707 23.468C8.42707 23.49 8.53807 23.5 8.64207 23.5C9.42407 23.5 9.96207 22.918 9.96207 22.2C9.86507 21.677 10.3451 19.558 9.04207 19.843C6.52307 20.379 6.22107 18.972 5.83707 18.236C6.92307 19.63 8.55507 19.595 9.78607 19.055C10.4691 18.755 10.1121 17.991 10.4361 17.712C10.5468 17.6167 10.6273 17.4911 10.6677 17.3507C10.7081 17.2103 10.7065 17.0611 10.6633 16.9216C10.6201 16.782 10.537 16.6581 10.4244 16.5651C10.3117 16.4721 10.1743 16.414 10.0291 16.398C7.71507 16.143 5.57207 15.397 5.57207 11.696C5.57207 9.52797 7.07707 9.33397 6.66207 8.42697C6.64707 8.39397 6.32907 7.67297 6.61707 6.57797C8.03607 6.83997 8.68907 7.85797 9.37007 7.67497C11.0571 7.21497 12.9141 7.21497 14.6001 7.67497C15.3041 7.86397 15.8071 6.87397 17.3381 6.57197C17.7791 8.22597 16.8651 8.62997 17.4411 9.24897C18.0731 9.92897 18.3941 10.752 18.3941 11.696C18.3941 17.26 13.6771 15.653 13.2931 16.916C13.2501 17.0565 13.2495 17.2065 13.2913 17.3474C13.3331 17.4882 13.4155 17.6136 13.5281 17.708C14.1381 18.221 14.0581 19.538 13.9931 20.597C13.9261 21.695 13.8681 22.642 14.4751 23.176C14.6891 23.366 15.0701 23.569 15.7591 23.429C22.3931 21.298 24.5891 15.407 23.8221 10.512C21.7261 -2.85603 2.29607 -2.84003 0.184072 10.462ZM8.45407 21.44L8.45807 21.945C7.95288 21.7709 7.46008 21.5628 6.98307 21.322C7.40807 21.431 7.89607 21.478 8.45407 21.44ZM8.82407 17.74L8.80907 17.82C7.95607 18.072 7.30007 17.821 6.85207 17.068L6.85107 17.066C7.53107 17.43 8.23207 17.626 8.82407 17.74ZM12.0001 1.99997C23.8331 1.99997 26.5021 18.267 15.4691 21.941C15.4311 21.644 15.4661 21.084 15.4901 20.689C15.5481 19.738 15.6161 18.63 15.2771 17.704C20.3651 16.645 20.7901 11.058 18.8311 8.56897C19.0741 7.61697 18.9761 5.37997 18.1021 5.10597C17.8961 5.04097 16.7971 4.80197 14.6651 6.14297C12.9023 5.72648 11.0668 5.72648 9.30407 6.14297C8.24007 5.47597 5.84207 4.39097 5.38207 5.54297C4.84807 6.88497 4.97507 7.96997 5.13407 8.57297C3.39507 10.777 3.91607 14.467 5.66807 16.199C4.67507 15.724 3.30707 15.562 3.01207 16.513C2.68907 17.55 3.92407 17.424 4.69107 19.317C4.76407 19.553 4.89907 19.83 5.10607 20.105C-1.70493 14.54 1.58107 1.99997 12.0001 1.99997Z" style="fill: var(--on-surface-variant)"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_66_1649">
+              <rect width="24" height="24" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
+          </a>
+          <a href="#" class="social-item">
+            
+          </a>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h3 class="title-large">
+          Let's Work Togetheer
+        </h3>
+        <div class="input-wrapper">
+          <input type="text" name="name" placeholder="Name*" required class="input-filed">
+          <input type="email" name="email" placeholder="Email*" required class="input-filed">
+          <input type="text" name="subject" placeholder="Subject*" required class="input-filed">
+          <textarea name="message" placeholder="Message*" class="textarea"></textarea>
+          <button class="btn">
+            <span class="label-large">
+              Send Message
+            </span>
+            <div class="state-layer"></div>
+          </button>
+
+
+        </div>
+      </div>
+    </div>
+   </section>
+      </div>
+        
+     </div>
+  </article>
+ </main>
+
+
+
+ 
+
+  <!--
+    - custon js link
+  -->
+  <script src="./js/script.js"></script>
+</body>
+
+
+
+</html>
