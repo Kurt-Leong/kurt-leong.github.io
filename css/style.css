@@ -116,16 +116,16 @@
 }
 [data-theme='dark']{
   color-scheme: dark;
-  --background:var(--background-dark); 
-  --on-background:var(--on-background-dark); 
-  --surface:var(--surface-dark); 
-  --on-surface:var(--on-surface-dark); 
-  --on-surface-variant:var(--on-surface-variant-dark); 
-  --surface-container-low:var(--surface-container-low-dark); 
-  --surface-container:var(--surface-container-dark); 
-  --surface-bright:var(--surface-bright-dark); 
-  --primary:var(--primary-dark); 
-  --on-primary:var(--on-primary-dark); 
+  --background: var(--background-dark); 
+  --on-background: var(--on-background-dark); 
+  --surface: var(--surface-dark); 
+  --on-surface: var(--on-surface-dark); 
+  --on-surface-variant: var(--on-surface-variant-dark); 
+  --surface-container-low: var(--surface-container-low-dark); 
+  --surface-container: var(--surface-container-dark); 
+  --surface-bright: var(--surface-bright-dark); 
+  --primary: var(--primary-dark); 
+  --on-primary: var(--on-primary-dark); 
   --outline: var(--outline-dark); 
   --outline-variant: var(--outline-variant-dark); 
 }
@@ -360,6 +360,9 @@ font: inherit;
   height:100%;
   object-fit:cover
  }
+
+ .tab-content:not(.active) {display:none}
+
 /*-----------------------------------*\
   #COMPONENT
 \*-----------------------------------*/
@@ -378,7 +381,49 @@ font: inherit;
 /**
  * TAB
  */
+.primary-tabs{
+  background-color: var(--background);
+  margin-block-start:24px;
+  margin-inline:16px;
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-content: center;
+  border-block-end:1px solid var(--outline)
+}
 
+.tab-btn {
+  height:48px;
+  width: 100%;
+  display: grid;
+  place-content: center;
+  background-color:var(--surface);
+  color: var(--on-surface-variant); /*  why not working here */ 
+  --state-layer-bg: var(--on-surface-variant)
+}
+
+.tab-btn.active {
+  color: var(--primary);
+
+}
+
+.tab-text{
+  position: relative;
+  height:48px;
+  line-height: 48px;
+}
+
+.tab-text::after{
+  content:"";
+  position:absolute;
+  bottom:0;
+  left:100%;
+  height:3px;
+  border-radius:3px 3px 0 0;
+  background-color: var(--primary );
+  opacity: 0;
+}
+
+.tab-btn.active .tab-text::after {opacity:1}
 
 /**
  * CHIP
@@ -395,15 +440,29 @@ font: inherit;
   border-radius: var(--radius-small);
   background-color: var(--surface);
   color: var(--on-surface-variant);
-  --state-layer-bg: var(--on-surface-variant);
+  --state-layer-bg: var(--on-surface-variant); /*   why not working*/
 }
 
 .chip .material-symbols-outlined{ font-size:1.8rem}
 /**
  * CARD
  */
+.card {
+  background-color: var(--surface-container-low);
+  border-radius: var(--radius-medium);
+  padding:16px;
+  --state-layer-bg: var(--on-surface-variant);
 
+} 
 
+.card-banner {border-radius: var(--radius-medium)}
+.card-content {
+  display:grid;
+  gap:4px;
+}
+
+.card-subtitle {color: var(--on-surface-variant)}
+.card-title{color:var(--on-surface)}   /* not working */
 /**
  * INPUT FIELD
  */
@@ -515,7 +574,12 @@ font: inherit;
   #PROJECT
 \*-----------------------------------*/
 
-
+.project-list{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  gap:12px;
+   
+}
 
 
 
