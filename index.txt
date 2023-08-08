@@ -137,7 +137,7 @@ VS Code
 
 Contact Info
 
-<span class="material-symbols-outlined" aria-hidden="true"> mail </span>
+<span class="material-symbols-outlined" aria-hidden="true"> mail </span> 
 
 Mail Us
 khalid@techgulf.com
