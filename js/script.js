@@ -55,3 +55,41 @@ $tabBtn.forEach((item) => {
     lastActiveTabBtn = this
   })
 })
+
+/**
+ * PROJECTS POPOUT
+ */
+
+// Get the modal
+
+var modalButtons = document.querySelectorAll('.myBtn')
+
+// Get the button that opens the modal
+var modals = document.querySelectorAll('.modal')
+// Get the <span> element that closes the modal
+var closeButtons = document.querySelectorAll('.close')
+
+// When the user clicks the button, open the modal
+
+modalButtons.forEach(function (button, index) {
+  button.onclick = function () {
+    modals[index].style.display = 'block'
+  }
+})
+
+// When the user clicks on <span> (x), close the modal
+
+closeButtons.forEach(function (closeButton, index) {
+  closeButton.onclick = function () {
+    modals[index].style.display = 'none'
+  }
+})
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  modals.forEach(function (modal) {
+    if (event.target == modal) {
+      modal.style.display = 'none'
+    }
+  })
+}
