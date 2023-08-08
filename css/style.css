@@ -426,12 +426,20 @@ font: inherit;
   place-content: center;
   background-color: var(--surface);
   color: var(--on-surface-variant); /*  why not working here */ 
-  --state-layer-bg: var(--on-surface-variant)
 }
+
+.tab-btn:hover {
+background-color: var(--on-surface-variant);
+color: var(--surface);
+}
+
 
 .tab-btn.active {
   color: var(--primary);
+}
 
+.tab-btn.active:hover {
+  color: var(--surface);
 }
 
 .tab-text{
@@ -471,6 +479,11 @@ font: inherit;
   --state-layer-bg: var(--on-surface-variant); /*   why not working*/
 }
 
+.chip:hover {
+  background-color: var(--on-surface-variant);
+  color: var(--surface);
+}
+
 .chip .material-symbols-outlined{ font-size:1.8rem}
 /**
  * CARD
@@ -483,14 +496,24 @@ font: inherit;
 
 } 
 
-.card-banner {border-radius: var(--radius-medium)}
+.card-banner {
+  border-radius: var(--radius-medium);
+  margin:0
+}
 .card-content {
   display: grid;
   gap: 4px;
+  
 }
 
 .card-subtitle {color: var(--on-surface-variant)}
 .card-title{color:var(--on-surface)}   /* not working */
+
+.card:hover {
+  background-color: var(--outline-variant);
+
+} 
+
 /**
  * INPUT FIELD
  */
