@@ -425,17 +425,19 @@ font: inherit;
   display: grid;
   place-content: center;
   background-color: var(--surface);
-  color: var(--on-surface-variant); /*  why not working here */ 
+  color: var(--on-surface-variant); 
 }
 
 .tab-btn:hover {
-background-color: var(--on-surface-variant);
+background-color: var(--on-surface);
 color: var(--surface);
 }
 
 
 .tab-btn.active {
   color: var(--primary);
+background-color: var(--outline);
+
 }
 
 .tab-btn.active:hover {
@@ -614,14 +616,16 @@ color: var(--surface);
   margin-block-start:24px;
   border-radius: var(--radius-large)
 }
-
+.about-card .about-wrapper {
+  border-block: 1px solid var(--outline-variant);
+}
 .about-card .card-title {
   color: var(--on-surface);
 }
 .about-card .card-text{
   margin-block: 12px;
   padding-block: 12px;
-  border-block: 1px solid var(--outline-variant);
+
 
 }
 
@@ -655,6 +659,10 @@ color: var(--surface);
 /*-----------------------------------*\
   #RESUME
 \*-----------------------------------*/
+.cv {
+margin-left: auto;
+}
+
 .resume-tab .list{
 display:grid;
 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
